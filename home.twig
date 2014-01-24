@@ -1,0 +1,50 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+
+<div class="corner-container">
+	<div class="corner left">
+	</div>
+	<div class="corner right">
+	</div>
+</div>
+
+<div class="wrapper clearfix">
+
+	<header>
+
+        <div class="companyheader clearfix">
+            {{widget('content', 'headercontent', {"content":"<p>100% FRESH FOOD</p>"})|raw}}
+            {{widget('companyname', 'companyname', {"business": "HUNTINGTONS"})|raw}}
+            {{widget('content', 'headercontent', {"content":"<p>BAR & GRILL</p>"})|raw}}
+        </div>
+       
+	</header>
+
+		<div class="background">
+
+
+	        <div class="wrapper clearfix">
+
+	        	{{widget('menusections', 'menusections1', {})|raw}}
+
+	        	{{widget('menu', 'menu1', {})|raw}}
+
+	    	</div><!--end wrapper clearfix-->
+
+		</div>
+
+</div><!--end wrapper clearfix-->
+
+<footer>
+	<div class="corner-container">
+		<div class="corner leftbottom">
+		</div>
+		<div class="corner rightbottom">
+		</div>
+	</div>
+</footer>
+
+{% endblock %}
