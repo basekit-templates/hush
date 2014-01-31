@@ -3,48 +3,38 @@
 
 {% block content %}
 
+<header>
+    <div class="companyheader wrapper clearfix">
+        <div class="header-left">
+            {{widget('content', 'footercolumn1content', {"content":"<p>+1 512-291-8222</p>"})|raw}}
+        </div>
+        <div class="header-center">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "HUSH"})|raw}}
+        </div>
+        <div class="header-right">
+            {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+        </div>
+    </div>       
+</header>
 
-<div class="corner-container">
-	<div class="corner left">
-	</div>
-	<div class="corner right">
-	</div>
+<div class="mainbody">
+    <div class="menu-container">
+         <div class="wrapper clearfix">
+                {{widget('menusections', 'menusections1', {})|raw}}
+        </div>
+    </div>
+    <div class="wrapper clearfix">
+        <div class="canvas">
+            <div class="canvas1">
+                {{widget('menu', 'menu1', {})|raw}}
+            </div>
+        </div>
+    </div>
 </div>
 
-<div class="wrapper clearfix">
-
-	<header>
-
-        <div class="companyheader clearfix">
-            {{widget('content', 'headercontent', {"content":"<p>100% FRESH FOOD</p>"})|raw}}
-            {{widget('companyname', 'companyname', {"business": "HUNTINGTONS"})|raw}}
-            {{widget('content', 'headercontent', {"content":"<p>BAR & GRILL</p>"})|raw}}
-        </div>
-       
-	</header>
-
-		<div class="background">
-
-
-	        <div class="wrapper clearfix">
-
-	        	{{widget('menusections', 'menusections1', {})|raw}}
-
-	        	{{widget('menu', 'menu1', {})|raw}}
-
-	    	</div><!--end wrapper clearfix-->
-
-		</div>
-
-</div><!--end wrapper clearfix-->
-
 <footer>
-	<div class="corner-container">
-		<div class="corner leftbottom">
-		</div>
-		<div class="corner rightbottom">
-		</div>
-	</div>
+    {{widget('content', 'footercolumn1content', {"content":"<p>100% FRESH FOOD</p>"})|raw}}
 </footer>
 
 {% endblock %}

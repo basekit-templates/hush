@@ -1,5 +1,5 @@
 {
-    "name":"Huntingtons",
+    "name":"Hush",
     "thumbnail":"huntingtons.png",
     "screenshot":"huntingtons.png",
     "tags": {
@@ -12,11 +12,11 @@
         "Swatch 1": {
             "color1":"#ffffff",
             "color2":"#f7f4e1",
-            "color3":"#74503c",
-            "color4":"#321a0f",
-            "color5":"#74503c",
-            "color6":"#74503c",
-            "color7":"#321a0f"
+            "color3":"#d48c37",
+            "color4":"#d48c37",
+            "color5":"#a6a5a5",
+            "color6":"#ffffff",
+            "color7":"#6fc4ef"
         },
         "Swatch 2": {
             "color1":"#f7f4e1",
@@ -58,15 +58,15 @@
     "fontSwatch": {
        "title": "\"Oswald\", Arial, sans-serif",
         "font1": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
-            "font-size": "60px",
+            "font-family": "\"Montserrat Alternates\", Arial, sans-serif",
+            "font-size": "40px",
             "font-weight": "700",
-            "line-height": "60px",
-            "color": "@color-swatch7",
+            "line-height": "48px",
+            "color": "@color-swatch3",
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-family": "\"Montserrat Alternates\", Arial, sans-serif",
             "font-size": "36px",
             "font-weight": "700",
             "line-height": "38px",
@@ -74,7 +74,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-family": "\"Montserrat Alternates\", Arial, sans-serif",
             "font-size": "24px",
             "font-weight": "700",
             "line-height": "28px",
@@ -82,7 +82,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-family": "\"Myriad Pro\", Helvetica, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "24px",
@@ -99,12 +99,12 @@
         },
         "font6": {
             "font-family": "\"Oswald\", Arial, sans-serif",
-            "font-size": "24px",
+            "font-size": "20px",
             "font-weight": "700",
             "line-height": "26px",
-            "color": "@color-swatch6",
+            "color": "@color-swatch1",
             "color-hover": "@color-swatch4",
-            "letter-spacing": "inherit",
+            "letter-spacing": "3px",
             "background-color": "transparent",
             "background-color-hover": "transparent"
         },
@@ -120,26 +120,26 @@
         },
         "font8": {
             "font-family": "\"Oswald\", Arial, sans-serif",
-            "font-size": "32px",
+            "font-size": "20px",
             "font-weight": "700",
-            "line-height": "70px",
-            "color": "@color-swatch4",
+            "line-height": "20px",
+            "color": "@color-swatch7",
             "letter-spacing": "2px"
         },
         "font9": {
             "font-family": "\"Oswald\", Arial, sans-serif",
-            "font-size": "32px",
+            "font-size": "24px",
             "font-weight": "700",
             "line-height": "32px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
-            "font-size": "90px",
+            "font-family": "\"Montserrat Alternates\", Arial, sans-serif",
+            "font-size": "48px",
             "font-weight": "700",
-            "line-height": "90px",
-            "color": "@color-swatch7",
+            "line-height": "50px",
+            "color": "@color-swatch4",
             "letter-spacing": "0.1em"
         }
     }
