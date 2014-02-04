@@ -1,3 +1,3 @@
 
-redrooster
+Hush Menu Template
 ========

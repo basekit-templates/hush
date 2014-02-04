@@ -1,7 +1,7 @@
 {
     "name":"hush",
-    "thumbnail":"huntingtons.png",
-    "screenshot":"huntingtons.png",
+    "thumbnail":"hush.png",
+    "screenshot":"hush.png",
     "tags": {
     "en": ["minimal", "clean", "photography", "vintage", "modern", "dark", "studio", "website", "creative", "elegant", "professional", "unique", "media", "sans-serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
@@ -19,24 +19,6 @@
             "color7":"#6fc4ef"
         },
         "Swatch 2": {
-            "color1":"#f7f4e1",
-            "color2":"#f7f4e1",
-            "color3":"#000000",
-            "color4":"#841c2f",
-            "color5":"#000000",
-            "color6":"#000000",
-            "color7":"#000000"
-        },
-        "Swatch 3": {
-            "color1":"#f7f4e1",
-            "color2":"#f7f4e1",
-            "color3":"#B4002B",
-            "color4":"#4F7391",
-            "color5":"#3c4a55",
-            "color6":"#B4002B",
-            "color7":"#B4002B"
-        },
-        "Swatch 4": {
             "color1":"#ffffff",
             "color2":"#f7f4e1",
             "color3":"#73AD5C",
@@ -45,12 +27,30 @@
             "color6":"#76946A",
             "color7":"#76946A"
         },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#f7f4e1",
+            "color3":"#D14646",
+            "color4":"#D14646",
+            "color5":"#a8a8a8",
+            "color6":"#B4002B",
+            "color7":"#D14646"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#f7f4e1",
+            "color3":"#70b5d8",
+            "color4":"#70b5d8",
+            "color5":"#696969",
+            "color6":"#76946A",
+            "color7":"#70b5d8"
+        },
         "Swatch 5": {
-            "color1":"#f7f4e1",
+            "color1":"#ffffff",
             "color2":"#f7f4e1",
             "color3":"#4BA5A1",
             "color4":"#666088",
-            "color5":"#3c4a55",
+            "color5":"#a8a8a8",
             "color6":"#4BA5A1",
             "color7":"#666088"
         }
@@ -124,7 +124,7 @@
             "font-weight": "700",
             "line-height": "20px",
             "color": "@color-swatch7",
-            "letter-spacing": "1px"
+            "letter-spacing": "2px"
         },
         "font9": {
             "font-family": "\"Oswald\", Arial, sans-serif",

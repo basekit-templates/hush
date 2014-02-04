@@ -148,6 +148,7 @@ ol, li, ul {
 
 @tablet: ~"only screen and (max-width: 768px)";
 @mobile: ~"only screen and (max-width: 480px)";
+@media only screen and (max-width: 1084px);
 
 
 /* ===============================
@@ -228,6 +229,7 @@ ol, li, ul {
             width: 100%;
             margin: 0 0 0;
             background-color: @color-swatch1;
+            margin-top:20px;
         }
 
         /* ALIGN CENTER */
@@ -271,11 +273,9 @@ ol, li, ul {
             @media @tablet {
                 width: 100%;
                 padding: 1em 0;
-                border-bottom: 1px dotted @color-swatch3;
             }
             &:first-child {
             @media @tablet {
-                margin-top: 30px;
             }
             }
             &:last-child {
@@ -312,13 +312,13 @@ ol, li, ul {
                     display: block;
                     width: 100%;
                     position: absolute;
-                    top: 15px;
-                    right: 49%;
+                    top: 35px;
+                    right: 46%;
                     &:after {
                         content:"";
                         background: image('/images/nav-icon.png') no-repeat;
-                        width: 15px;
-                        height: 20px;
+                        width: 30px;
+                        height: 30px;
                         display: inline-block;
                         position: absolute;
                         right: 0;
@@ -333,23 +333,6 @@ ol, li, ul {
    5. HEADER
    =============================== */
 
-.header-left {
-    float:left;
-    width:33%;
-    margin-top:135px;
-}
-
-.header-right {
-    float:right;
-    width:33%;
-    margin-top:135px;
-}
-
-.header-center {
-    float:left;
-    width:33%;
-     }
-
 header {
     background-color:@color-swatch1;
     padding:0;
@@ -357,10 +340,53 @@ header {
     background-position:bottom;
     background-size:contain;
 
+            .header-left {
+                float:left;
+                width:33%;
+                margin-top:135px;
+                    .widget.content { 
+                    @media @tablet {
+                    margin:0px auto;
+                    display:table;
+                    text-align:center;
+                        }
+                    }
+                @media @tablet {
+                    width:100%;
+                    margin-top:20px;
+                }
+            }
+
+            .header-right {
+                float:right;
+                width:33%;
+                margin-top:135px;
+                .widget.profile {
+                    @media @tablet {
+                    margin:0px auto;
+                    display:table;
+                    }
+                }
+                @media @tablet {
+                    width:100%;
+                    margin-top:0;
+                    margin-bottom:20px;
+                }
+            }
+
+            .header-center {
+                float:left;
+                width:33%;
+                @media @tablet {
+                    width:100%;
+                }
+            }
+
  .companyheader {
         float:none;
         max-width: 1100px;
         margin: 0px auto;
+
         .logo, .companyname {
             text-align: center;
             float:none;
@@ -748,40 +774,54 @@ header {
 
             }   /* end ol .menu-items */  
 
-            .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */  
-                background: @color-swatch3;
-                padding: 2em 2em 0;
-                margin-bottom: 2em;
-                position: relative;
-                border: none;
-                list-style: none;
-                background-image: url(templates/hush/images/send-icon.png);
-                background-repeat: no-repeat;
-                background-position: top 35px center;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                border-radius: 3px;
-                &:before {
-                   content: "";
-                   position: absolute;
-                   top: 3px;
-                   left: 3px;
-                   right: 3px;
-                   bottom: 3px;
-               }
-                @media @mobile {
-                    padding: 0 2em 0;
-                }
-                .menu-subsection-header {
-                    border-bottom: 1px solid @color-swatch3;
-                    margin-bottom: 20px;
-                    padding-top: 30px;
-                }
-
-                h2, p, .inner-item h3, p.menu-item-description, .menu-item-price p, h4.menu-item-nutritional-title, h5.menu-item-nutritional-prop {
-                    color:@font-swatch9-color;
-                }
-
+            .menu-subsection {
+                .menu-subsection-promoted { /* PROMOTED SUB-SECTION */  
+                    background: @color-swatch3;
+                    padding: 2em 2em 0;
+                    margin-bottom: 2em;
+                    position: relative;
+                    border: none;
+                    list-style: none;
+                    background-image: url(templates/hush/images/send-icon.png);
+                    background-repeat: no-repeat;
+                    background-position: top 35px center;
+                    -webkit-border-radius: 3px;
+                    -moz-border-radius: 3px;
+                    border-radius: 3px;
+                    &:before {
+                       content: "";
+                       position: absolute;
+                       top: 3px;
+                       left: 3px;
+                       right: 3px;
+                       bottom: 3px;
+                   }
+                    @media @mobile {
+                        padding: 0 2em 0;
+                    }
+                    .menu-subsection-header {
+                        border-bottom: 1px solid @color-swatch1;
+                        margin-bottom: 20px;
+                        padding-top: 30px;
+                        @media @tablet {
+                            padding-top:70px;
+                        }                 
+                        h2, p {
+                            color: @font-swatch9-color;
+                        }
+                    }
+                    .menu-item {
+                        p, h3, .standard-price, .menu-item-nutritional-prop {
+                            color: @font-swatch9-color;
+                        }
+                        h4, {
+                            color:lighten(@font-swatch3-color,30%);
+                            }
+                        span.vegetarian-icon.dietary-icon, span.not.spicy-icon.dietary-icon, span.nutFree-icon.dietary-icon, span.dairyFree-icon.dietary-icon {
+                            background-color:lighten(@font-swatch3-color,10%);
+                        }
+                        }
+                    }
             } /* end PROMOTED SUB-SECTION */
 
             .menu-info {
@@ -929,6 +969,7 @@ footer {
             background-size: 22px;
             background-repeat: no-repeat;
             background-color:@color-swatch7;
+            margin-left:5px;
             &:hover {
               background-color:@color-swatch3;
             }
