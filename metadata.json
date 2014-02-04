@@ -124,7 +124,7 @@
             "font-weight": "700",
             "line-height": "20px",
             "color": "@color-swatch7",
-            "letter-spacing": "2px"
+            "letter-spacing": "1px"
         },
         "font9": {
             "font-family": "\"Oswald\", Arial, sans-serif",

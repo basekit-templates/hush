@@ -41,7 +41,7 @@ body {
 
 .canvas  {
     background-color: #ffffff;
-    max-width: 960px;
+    max-width: 1100px;
     width: 100%;
     margin: 0px auto;
     padding: 0 0 3px;
@@ -53,11 +53,11 @@ body {
 
 .canvas1  {
     background-color: #ffffff;
-    max-width: 960px;
+    max-width: 1100px;
     border: 1px solid @color-swatch3;
     width: 90%;
     margin: 13px auto;
-    padding: 0px 30px;
+    padding: 0px 35px;
 }
 
 a {
@@ -153,6 +153,10 @@ ol, li, ul {
 /* ===============================
    3. CUSTOM CSS
    =============================== */
+
+   .menu-subsection-wrapper { 
+    border:1px solid white;
+   }
 
 .contacttextwidget {
     text-align:center;
@@ -355,7 +359,7 @@ header {
 
  .companyheader {
         float:none;
-        max-width: 960px;
+        max-width: 1100px;
         margin: 0px auto;
         .logo, .companyname {
             text-align: center;
@@ -431,13 +435,16 @@ header {
     @media only screen and (max-width: 1084px) {
          width: 90%;
     }
+    .menu-subsection {
+        border:0px;
+    }
     @media @tablet {
         background-image: none;
         width:100%;
     }
 
     .main {
-        width: 90%;
+        width: 100%;
         padding-top:30px;
         margin: 0 auto;
             @media only screen and (max-width: 1084px) {
@@ -742,10 +749,18 @@ header {
             }   /* end ol .menu-items */  
 
             .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */  
-                border: 6px solid @color-swatch3;
+                background: @color-swatch3;
                 padding: 2em 2em 0;
                 margin-bottom: 2em;
                 position: relative;
+                border: none;
+                list-style: none;
+                background-image: url(templates/hush/images/send-icon.png);
+                background-repeat: no-repeat;
+                background-position: top 35px center;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                border-radius: 3px;
                 &:before {
                    content: "";
                    position: absolute;
@@ -760,7 +775,13 @@ header {
                 .menu-subsection-header {
                     border-bottom: 1px solid @color-swatch3;
                     margin-bottom: 20px;
+                    padding-top: 30px;
                 }
+
+                h2, p, .inner-item h3, p.menu-item-description, .menu-item-price p, h4.menu-item-nutritional-title, h5.menu-item-nutritional-prop {
+                    color:@font-swatch9-color;
+                }
+
             } /* end PROMOTED SUB-SECTION */
 
             .menu-info {
@@ -871,7 +892,7 @@ footer {
    =============================== */
 
 .widget.profile .bk-profile-socialicons {
-    text-align: right;
+    float: right;
     font-size:1em;
     font-family:@font-swatch7-font-family;
     margin:0;
@@ -912,6 +933,12 @@ footer {
               background-color:@color-swatch3;
             }
         }
+    }
+}
+
+.menu-subsection-promoted {
+    .menu-item-price p, p.standard-price {
+        color:white;
     }
 }
 
@@ -1334,6 +1361,19 @@ footer {
 }
 
 /* ===============================
+   9. DESKTOP WIDTH
+   =============================== */
+
+@media only screen and (max-width: 1085px) {
+    .widget.menu {
+        width:100%;
+    }
+    .canvas1 {
+        padding:0px 15px;
+    }
+}
+
+/* ===============================
    9. IPAD WIDTH
    =============================== */
 
@@ -1368,6 +1408,77 @@ footer {
     .widget.menusections ul li a {
         color: @font-swatch1-color;
     }
+
+    .widget.menu {
+        width:100%;
+    }
+
+    .canvas1 {
+        padding:0px 15px;
+    }
+}
+
+@media only screen and (max-width: 1084px) {
+        .canvas1 {
+        margin: 10px auto;
+        padding: 0px 30px;
+}
+}
+
+@media only screen and (max-width: 961px) {
+        .canvas1 {
+        margin: 10px auto;
+        padding: 0px 20px;
+}
+}
+
+@media only screen and (max-width: 960px) {
+        .canvas1 {
+        margin: 10px auto;
+        padding: 0px 25px;
+}
+}
+
+@media only screen and (max-width: 886px) {
+        .canvas1 {
+        margin: 10px auto;
+        padding: 0px 20px;
+}
+}
+
+@media only screen and (max-width: 701px) {
+        .canvas1 {
+        margin: 10px auto;
+        padding: 0px 15px;
+}
+}
+
+@media only screen and (max-width: 700px) {
+        .canvas1 {
+        margin: 10px auto;
+        padding: 0px 15px;
+}
+}
+
+@media only screen and (max-width: 566px) {
+        .canvas1 {
+        margin: 10px auto;
+        padding: 0px 10px;
+}
+}
+
+@media only screen and (max-width: 481px) {
+        .canvas1 {
+        margin: 10px auto;
+        padding: 0px 10px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+        .canvas1 {
+        margin: 10px auto;
+        padding: 0px 5px;
+}
 }
 
 /* ===============================
@@ -1421,10 +1532,8 @@ footer {
 
     .widget.menu {
         padding:30px 0 0;
-    }
-
-    .widget.menu {
-      margin-top:0px;
+        margin-top:0px;
+        width:100%;
     }
 
     .bk-content-text h2:before, .bk-content-text h2:after {
