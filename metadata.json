@@ -2,6 +2,7 @@
     "name":"hush",
     "thumbnail":"hush.png",
     "screenshot":"hush.png",
+    "pageTypes":["menu"],
     "tags": {
     "en": ["minimal", "clean", "photography", "vintage", "modern", "dark", "studio", "website", "creative", "elegant", "professional", "unique", "media", "sans-serif"],
     "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
@@ -56,7 +57,7 @@
         }
     },
     "fontSwatch": {
-       "title": "\"Oswald\", Arial, sans-serif",
+       "title": "Oswald",
         "font1": {
             "font-family": "\"Montserrat Alternates\", Arial, sans-serif",
             "font-size": "40px",
