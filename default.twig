@@ -22,9 +22,9 @@
 <div class="mainbody">
     <div class="menu-container">
          <div class="wrapper clearfix">
-                {% if pages|length > 1 %}
-        {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    {% endif %}
+             {% if pages|length > 1 %}
+                 {{widget('extendednavigation', 'navigationheader', {})|raw}}
+             {% endif %}
         </div>
     </div>
     <div class="wrapper clearfix">
@@ -33,7 +33,7 @@
             {{zone('main')|raw}}
                 <div class="footer-text">
                     {{widget('content', 'footercolumn2content', {"content":"<p>100% FRESH FOOD</p>"})|raw}}
-                    </div>
+                </div>
             </div>
         </div>
     </div>
