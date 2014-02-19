@@ -11,7 +11,7 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#f7f4e1",
+            "color2":"#F0EEEE",
             "color3":"#d48c37",
             "color4":"#d48c37",
             "color5":"#a6a5a5",
@@ -23,7 +23,7 @@
             "color2":"#f7f4e1",
             "color3":"#73AD5C",
             "color4":"#73AD5C",
-            "color5":"#76946A",
+            "color5":"#a8a8a8",
             "color6":"#76946A",
             "color7":"#76946A"
         },
@@ -41,7 +41,7 @@
             "color2":"#f7f4e1",
             "color3":"#70b5d8",
             "color4":"#70b5d8",
-            "color5":"#696969",
+            "color5":"#a8a8a8",
             "color6":"#76946A",
             "color7":"#70b5d8"
         },
@@ -102,21 +102,21 @@
             "font-size": "20px",
             "font-weight": "700",
             "line-height": "26px",
-            "color": "@color-swatch1",
-            "color-hover": "@color-swatch4",
+            "color": "@color-swatch3",
+            "color-hover": "@color-swatch3",
             "letter-spacing": "3px",
-            "background-color": "transparent",
-            "background-color-hover": "transparent"
+            "background-color": "@color-swatch3",
+            "background-color-hover": "lighten(@color-swatch3,5%)"
         },
         "font7": {
             "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "18px",
             "font-weight": "700",
             "line-height": "18px",
-            "color": "@color-swatch5",
+            "color": "@color-swatch1",
             "letter-spacing": "inherit",
-            "background-color": "transparent",
-            "background-color-hover": "darken(@color-swatch1,5%)"
+            "background-color": "@color-swatch3",
+            "background-color-hover": "lighten(@color-swatch3,5%)"
         },
         "font8": {
             "font-family": "\"Oswald\", Arial, sans-serif",
