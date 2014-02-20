@@ -141,7 +141,7 @@
             "font-weight": "700",
             "line-height": "50px",
             "color": "@color-swatch4",
-            "letter-spacing": "0.1em"
+            "letter-spacing": "1px"
         }
     }
 }
