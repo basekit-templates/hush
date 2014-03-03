@@ -6,12 +6,14 @@
 {% if pages|length > 1 %}
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
     {% endif %}
+    <div class="logo">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+    </div>
     <div class="companyheader wrapper clearfix">
         <div class="header-left">
             {{widget('content', 'footercolumn1content', {"content":"<p>+1 512-291-8222</p>"})|raw}}
         </div>
         <div class="header-center">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         </div>
         <div class="header-right">
