@@ -367,6 +367,8 @@ header.bk-header {
         @media @tablet {
             background-color: transparent;
             margin-top:0;
+            border-bottom:0;
+            padding:0;
         }
         li {
             ul {
@@ -394,7 +396,6 @@ header.bk-header {
                 @media @tablet {
                     width: 100%;
                     padding: 1em 0;
-                    border-bottom: 1px solid @color-swatch3;
                 }
                 &:last-child {
                     @media @tablet {
@@ -1696,6 +1697,14 @@ blockquote:before {
     header.bk-header .companyheader .companyname a {
         margin-bottom:10px;
     }
+    
+    .widget .extendednavigation ul li.folder .text {
+        color:@font-swatch6-color;
+    }
+
+    .widget .extendednavigation ul li.folder .text:hover {
+        color:@font-swatch6-color;
+    }
 
 }
 
@@ -1768,14 +1777,6 @@ blockquote:before {
 
     .widget.menu .main{
         background-color:transparent;
-    }
-
-    .widget .extendednavigation ul li.folder .text {
-        color:@font-swatch6-color;
-    }
-
-    .widget .extendednavigation ul li.folder .text:hover {
-        color:@font-swatch6-color;
     }
 
     .canvas1 {
