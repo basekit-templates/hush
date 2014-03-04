@@ -5,12 +5,17 @@
 <div class="bk-pt-default">
 
 <header class="bk-header">
+{% if pages|length > 1 %}
+        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+    {% endif %}
+    <div class="logo">
+        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+    </div>
     <div class="companyheader wrapper clearfix">
         <div class="header-left">
             {{widget('content', 'footercolumn1content', {"content":"<p>+1 512-291-8222</p>"})|raw}}
         </div>
         <div class="header-center">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         </div>
         <div class="header-right">
@@ -22,15 +27,13 @@
 <div class="mainbody">
     <div class="menu-container">
          <div class="wrapper clearfix">
-             {% if pages|length > 1 %}
-                 {{widget('extendednavigation', 'navigationheader', {})|raw}}
-             {% endif %}
+                {{widget('menusections', 'menusections1', {})|raw}}
         </div>
     </div>
     <div class="wrapper clearfix">
         <div class="canvas">
             <div class="canvas1">
-            {{zone('main')|raw}}
+                {{zone('main')|raw}}
                 <div class="footer-text">
                     {{widget('content', 'footercolumn2content', {"content":"<p>100% FRESH FOOD</p>"})|raw}}
                 </div>
