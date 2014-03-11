@@ -94,15 +94,6 @@ h1, h2, h3, h4, h5, p {
     font-size: @font-swatch8-font-size;           
 }
 
-#footercolumn1profilePhone {
-        font-family:@font-swatch8-font-family;
-    font-weight: @font-swatch8-font-weight;
-    color:@font-swatch8-color;
-    line-height:@font-swatch8-line-height;
-    letter-spacing: @font-swatch8-letter-spacing;
-    font-size: @font-swatch8-font-size; 
-}
-
 
 
 /* ===============================
@@ -125,9 +116,15 @@ h1, h2, h3, h4, h5, p {
     float:none;
 }
 
-.bk-pt-default .canvas {
-    margin-top:40px;
+.widget.profile span {
+    font-family:@font-swatch8-font-family;
+    font-weight: @font-swatch8-font-weight;
+    color:@font-swatch8-color;
+    line-height:@font-swatch8-line-height;
+    letter-spacing: @font-swatch8-letter-spacing;
+    font-size: @font-swatch8-font-size;    
 }
+
 
 /* ===============================
    4. MENU SECTIONS NAVIGATION
@@ -265,7 +262,6 @@ header.bk-header {
             .header-left {
                 float:left;
                 width:33%;
-                margin-top:10px;
                     .widget.content { 
                     @media @tablet {
                     margin:0px auto;
@@ -282,7 +278,6 @@ header.bk-header {
             .header-right {
                 float:right;
                 width:33%;
-                margin-top:10px;
                 .widget.profile {
                     @media @tablet {
                     margin:0px auto;
