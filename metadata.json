@@ -103,8 +103,8 @@
             "font-size": "16px",
             "font-weight": "700",
             "line-height": "26px",
-            "color": "@color-swatch3",
-            "color-hover": "@color-swatch3",
+            "color": "@color-swatch1",
+            "color-hover": "@color-swatch1",
             "letter-spacing": "3px",
             "background-color": "@color-swatch3",
             "background-color-hover": "lighten(@color-swatch3,5%)"
