@@ -1,6 +1,7 @@
 {% extends "layout.twig" %}
 
 {% block content %}
+
     <header class="bk-header">
     {% if pages|length > 1 %}
             {{widget('extendednavigation', 'navigationheader', {})|raw}}
@@ -22,11 +23,6 @@
     </header>
 
     <div class="mainbody">
-        <div class="menu-container">
-             <div class="wrapper clearfix">
-                    {{widget('menusections', 'menusections1', {})|raw}}
-            </div>
-        </div>
         <div class="wrapper clearfix">
             <div class="canvas">
                 <div class="canvas1">

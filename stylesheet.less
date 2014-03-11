@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, p {
                 font-family:@font-swatch6-font-family;
                 font-size:@font-swatch6-font-size;
                 font-weight: @font-swatch6-font-weight;
-                color: @font-swatch7-color;
+                color: @font-swatch6-color;
                 line-height:@font-swatch6-line-height;
                 letter-spacing: @font-swatch6-letter-spacing;
                 &:hover {
@@ -248,7 +248,6 @@ h1, h2, h3, h4, h5, p {
    5. HEADER
    =============================== */
 .logo {
-    margin-top:40px;
     text-align:center;
 }
 
@@ -258,7 +257,7 @@ header.bk-header {
     background-repeat: no-repeat;
     background-position:bottom;
     background-size:contain;
-
+    padding-top:60px;
             .header-left {
                 float:left;
                 width:33%;
@@ -380,7 +379,6 @@ header.bk-header {
         margin:0px auto;
         display:table;
         padding:20px 0px;
-        border-bottom:1px solid #eeeeee;
         @media @tablet {
             background-color: transparent;
             margin-top:0;
@@ -1721,6 +1719,19 @@ blockquote:before {
 
     .widget .extendednavigation ul li.folder .text:hover {
         color:@font-swatch6-color;
+    }
+
+    header.bk-header .header-left .widget.profile span {
+        margin: 0px auto;
+        display: table;
+        float:none;
+    }
+    .canvas {
+        margin-top:50px;
+    }
+
+    header.bk-header {
+        padding-bottom:40px;
     }
 
 }

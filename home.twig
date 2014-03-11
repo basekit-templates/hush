@@ -1,10 +1,8 @@
 {% extends "layout.twig" %}
 
 {% block content %}
+
     <header class="bk-header">
-    {% if pages|length > 1 %}
-            {{widget('extendednavigation', 'navigationheader', {})|raw}}
-        {% endif %}
         <div class="logo">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
         </div>
@@ -23,6 +21,7 @@
 
     <div class="mainbody">
         <div class="menu-container">
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
         </div>
         <div class="wrapper clearfix">
             <div class="canvas">
