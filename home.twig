@@ -1,39 +1,40 @@
 {% extends "layout.twig" %}
 
 {% block content %}
+<div class="bk-pt-default">
+    <header class="bk-header">
+    {% if pages|length > 1 %}
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        {% endif %}
+        <div class="logo">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        </div>
+        <div class="companyheader wrapper clearfix">
+            <div class="header-left">
+                {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+            </div>
+            <div class="header-center">
+                {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            </div>
+            <div class="header-right">
+                {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+            </div>
+        </div>       
+    </header>
 
-<header class="bk-header">
-{% if pages|length > 1 %}
-        {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    {% endif %}
-    <div class="logo">
-        {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-    </div>
-    <div class="companyheader wrapper clearfix">
-        <div class="header-left">
-            {{widget('content', 'footercolumn1content', {"content":"<p>+1 512-291-8222</p>"})|raw}}
+    <div class="mainbody">
+        <div class="menu-container">
+             <div class="wrapper clearfix">
+                    {{widget('menusections', 'menusections1', {})|raw}}
+            </div>
         </div>
-        <div class="header-center">
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
-        </div>
-        <div class="header-right">
-            {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
-        </div>
-    </div>       
-</header>
-
-<div class="mainbody">
-    <div class="menu-container">
-         <div class="wrapper clearfix">
-                {{widget('menusections', 'menusections1', {})|raw}}
-        </div>
-    </div>
-    <div class="wrapper clearfix">
-        <div class="canvas">
-            <div class="canvas1">
-                {{zone('main')|raw}}
-                <div class="footer-text">
-                    {{widget('content', 'footercolumn2content', {"content":"<p>100% FRESH FOOD</p>"})|raw}}
+        <div class="wrapper clearfix">
+            <div class="canvas">
+                <div class="canvas1">
+                    {{zone('main')|raw}}
+                    <div class="footer-text">
+                        {{widget('content', 'footercolumn2content', {"content":"<p>100% FRESH FOOD</p>"})|raw}}
+                    </div>
                 </div>
             </div>
         </div>
