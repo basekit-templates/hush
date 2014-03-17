@@ -28,7 +28,7 @@ body {
     padding: 0;
     background-image: image('/images/background.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .mainbody {
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, p {
     padding: 0 0 10px;
 }
 
-/*
+
 .bk-content-text p {
     font-family:@font-swatch8-font-family;
     font-weight: @font-swatch8-font-weight;
@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, p {
     letter-spacing: @font-swatch8-letter-spacing;
     font-size: @font-swatch8-font-size;           
 }
-*/
+
 
 
 /* ===============================
@@ -108,16 +108,21 @@ h1, h2, h3, h4, h5, p {
     text-align:center;
 }
 
-.widget.menu .main .menu-items li .inner-item .menu-section-item-dietary-props .dietary-icon {
-    padding:5px;
-}
-
 .main{
     padding:0;
 }
 
 .socialheader {
     float:none;
+}
+
+.widget.profile span {
+    font-family:@font-swatch8-font-family;
+    font-weight: @font-swatch8-font-weight;
+    color:@font-swatch8-color;
+    line-height:@font-swatch8-line-height;
+    letter-spacing: @font-swatch8-letter-spacing;
+    font-size: @font-swatch8-font-size;    
 }
 
 
@@ -201,7 +206,7 @@ h1, h2, h3, h4, h5, p {
                 font-family:@font-swatch6-font-family;
                 font-size:@font-swatch6-font-size;
                 font-weight: @font-swatch6-font-weight;
-                color: @font-swatch7-color;
+                color: @font-swatch6-color;
                 line-height:@font-swatch6-line-height;
                 letter-spacing: @font-swatch6-letter-spacing;
                 &:hover {
@@ -242,6 +247,9 @@ h1, h2, h3, h4, h5, p {
 /* ===============================
    5. HEADER
    =============================== */
+.logo {
+    text-align:center;
+}
 
 header.bk-header {
     background-color:@color-swatch1;
@@ -249,11 +257,14 @@ header.bk-header {
     background-repeat: no-repeat;
     background-position:bottom;
     background-size:contain;
-
+    padding-top:60px;
             .header-left {
                 float:left;
                 width:33%;
-                margin-top:135px;
+                margin-top:10px;
+                .widget.profile span {
+                    float:left;
+                }
                     .widget.content { 
                     @media @tablet {
                     margin:0px auto;
@@ -270,7 +281,10 @@ header.bk-header {
             .header-right {
                 float:right;
                 width:33%;
-                margin-top:135px;
+                margin-top:10px;
+                .widget.profile span {
+                    float:right;
+                }
                 .widget.profile {
                     @media @tablet {
                     margin:0px auto;
@@ -365,10 +379,11 @@ header.bk-header {
         margin:0px auto;
         display:table;
         padding:20px 0px;
-        border-bottom:1px solid #eeeeee;
         @media @tablet {
             background-color: transparent;
             margin-top:0;
+            border-bottom:0;
+            padding:0;
         }
         li {
             ul {
@@ -396,7 +411,6 @@ header.bk-header {
                 @media @tablet {
                     width: 100%;
                     padding: 1em 0;
-                    border-bottom: 1px solid @color-swatch3;
                 }
                 &:last-child {
                     @media @tablet {
@@ -549,7 +563,7 @@ header.bk-header {
 }
 
 .widget .extendednavigation ul li.folder:after {
-    border-top-color:@color-swatch3;
+    border-top-color:@color-swatch1;
 }
 
  /* ===============================
@@ -583,14 +597,6 @@ header.bk-header {
         }
     }
  }
-
-  .bk-pt-default .extendednavigation {
-    border-bottom:0;
-  }
-
-  .bk-pt-default .widget .extendednavigation ul li.folder:after {
-    border-top-color:@color-swatch1;
-  }
 
 /* ===============================
    6. MENU
@@ -695,7 +701,7 @@ header.bk-header {
             .menu-items{
                 li {    /* menu-item */
                     position: relative;
-                    display: inline-block;
+                    display: block;
                     &.menu-item-promoted { /* menu-item-promoted */
                         padding: 1.2em;
                         margin: 11px 1px 20px;
@@ -716,7 +722,7 @@ header.bk-header {
                     }   /* end menu-item-promoted */
 
                     .inner-item {
-                        display: inline-block;
+                        display: block;
                         border-bottom: 1px dotted @color-swatch3;
                         padding-bottom: 30px;
                         margin-bottom: 30px;
@@ -790,8 +796,9 @@ header.bk-header {
                                 margin-top: 0.5em;
                                 padding: 0;
                                 display: inline-block;
+                                float:left;
                                 .dietary-icon {
-                                    background-color: @color-swatch4;
+                                    background-color:lighten(@color-swatch3,10%);
                                     width: auto;
                                     height: 30px;
                                     border: 0;
@@ -816,7 +823,7 @@ header.bk-header {
                             margin-bottom: 0.5em;
                             width: 100%;
                         }
-
+                    .clearfix;  
                     }   /* end inner-item */
 
                 }  /* end li .menu-item */
@@ -921,6 +928,11 @@ header.bk-header {
 
 } /* end .widget.menu */
 
+.widget.menu .main .menu-items li .inner-item .menu-section-item-dietary-props .dietary-icon {
+    padding:5px;
+    background-color:lighten(@color-swatch3,10%);
+}
+
 
 /* ===============================
    7. FOOTER
@@ -967,7 +979,7 @@ footer.bk-footer {
 .footer-text {
     margin:0px auto;
     display:table;
-    padding:10px 0px 30px 0px;
+    padding:30px 0px 20px 0px;
 }
 
 /* ===============================
@@ -1689,6 +1701,30 @@ blockquote:before {
        box-shadow:none;
        margin-top:20px; 
     }
+    header.bk-header .companyheader .companyname a {
+        margin-bottom:10px;
+    }
+    
+    .widget .extendednavigation ul li.folder .text {
+        color:@font-swatch6-color;
+    }
+
+    .widget .extendednavigation ul li.folder .text:hover {
+        color:@font-swatch6-color;
+    }
+
+    header.bk-header .header-left .widget.profile span {
+        margin: 0px auto;
+        display: table;
+        float:none;
+    }
+    .canvas {
+        margin-top:50px;
+    }
+
+    header.bk-header {
+        padding-bottom:40px;
+    }
 
 }
 
@@ -1763,16 +1799,12 @@ blockquote:before {
         background-color:transparent;
     }
 
-    .widget .extendednavigation ul li.folder .text {
-        color:@font-swatch6-color;
-    }
-
-    .widget .extendednavigation ul li.folder .text:hover {
-        color:@font-swatch6-color;
-    }
-
     .canvas1 {
         width:89%;
+    }
+
+    header.bk-header .companyheader .companyname a {
+        margin-bottom:10px;
     }
 }
 
@@ -1780,5 +1812,40 @@ blockquote:before {
     .canvas1 {
         width:88%;
 }
+}
+
+/* ===============================
+   Print override
+   =============================== */
+.print-mixin {
+    .header-feature,
+    .extendednavigation,
+    .bk-footer,
+    .bk-header .widget.profile  {
+        display:none;
+    }
+    .companyheader {
+        padding:0px;
+    }
+    .menu-container {
+        display:none;
+    }
+    .menu-info {
+        margin:0px;
+    }
+    .widget.menu .main.wrapper {
+        page-break-before:always;
+    }
+    .widget.menu .menu-item-image-wrap {
+        height:150px;
+    }
+}
+
+@media print {
+    .print-mixin;
+}
+
+.bk-print {
+    .print-mixin;
 }
 
